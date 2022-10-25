@@ -10,7 +10,7 @@ host = "192.168.20.246"
 # the port, let's use 5001
 port = 8001
 # the name of file we want to send, make sure it exists
-filename = "/storage/emulated/0/PhoneRecord.zip"
+filename = "/storage/emulated/0/DCIM/Camera/VID_20220403_120336.mp4"
 # get the file size
 filesize = os.path.getsize(filename)
 
@@ -34,7 +34,7 @@ progress = tqdm.tqdm(range(filesize), f"Sending {filename}", unit="B", unit_scal
 
 
 
-with open ("/storage/emulated/0/PhoneRecord.zip","rb") as f:
+with open ("/storage/emulated/0/DCIM/Camera/VID_20220403_120336.mp4","rb") as f:
     while True:
         # read the bytes from the file
         bytes_read = f.read(BUFFER_SIZE)
